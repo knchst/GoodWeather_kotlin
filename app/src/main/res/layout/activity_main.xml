@@ -10,7 +10,44 @@
     tools:context="com.knchst.goodweather_kotlin.MainActivity">
 
     <TextView
+        android:id="@+id/locationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerHorizontal="true"
+        android:text="Tokyo"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/minTextView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/weatherImageView"
+        android:layout_toLeftOf="@+id/weatherImageView"
+        android:text="23°"
+        android:textSize="35sp"
+        android:gravity="center" />
+    <ImageView
+        android:id="@+id/weatherImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/locationTextView" />
+    <TextView
+        android:id="@+id/maxTextView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/weatherImageView"
+        android:layout_toRightOf="@+id/weatherImageView"
+        android:text="31°"
+        android:textSize="35sp"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/weatherImageView"
+        android:textSize="25sp"
+        android:text="Sky is clear" />
+
 </RelativeLayout>
