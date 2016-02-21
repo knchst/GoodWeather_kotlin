@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dailyWeatherRowDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/dailyWeatherRowImageView"
+        android:layout_alignParentLeft="true"
+        android:textSize="30sp"
+        android:text="3/23"
+        android:textColor="@color/colorGray"/>
+    <TextView
+        android:id="@+id/dailyWeatherRowDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/dailyWeatherRowImageView"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:text="Sky is clear"
+        android:textColor="@color/colorGray"/>
+    <ImageView
+        android:id="@+id/dailyWeatherRowImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/dailyWeatherRowMaxTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/dailyWeatherRowImageView"
+        android:layout_alignParentRight="true"
+        android:textSize="30sp"
+        android:text="29°"
+        android:textColor="@color/colorGray"/>
+    <TextView
+        android:id="@+id/dailyWeatherRowMinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/dailyWeatherRowImageView"
+        android:layout_alignParentRight="true"
+        android:textSize="30dp"
+        android:text="12°"
+        android:textColor="@color/colorGray"/>
+</RelativeLayout>
